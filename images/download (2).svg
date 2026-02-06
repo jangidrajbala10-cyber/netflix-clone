@@ -1,0 +1,30 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Outer glow -->
+    <radialGradient id="outerGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#ffb3f0"></stop>
+      <stop offset="70%" stop-color="#d93cff"></stop>
+      <stop offset="100%" stop-color="#3a002f"></stop>
+    </radialGradient>
+
+    <!-- Inner circle -->
+    <radialGradient id="innerCircle" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ffe6f8"></stop>
+      <stop offset="100%" stop-color="#ff9ad5"></stop>
+    </radialGradient>
+  </defs>
+
+  <!-- Glow background -->
+  <circle cx="60" cy="60" r="52" fill="url(#outerGlow)"></circle>
+
+  <!-- Main circle -->
+  <circle cx="60" cy="60" r="40" fill="url(#innerCircle)"></circle>
+
+  <!-- Arrow shaft -->
+  <rect x="56" y="38" width="8" height="28" rx="4" fill="#e1002a"></rect>
+
+  <!-- Arrow head -->
+  <path d="M44 60 L60 76 L76 60" stroke="#e1002a" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+
+</svg>

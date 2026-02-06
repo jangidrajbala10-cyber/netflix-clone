@@ -1,0 +1,744 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+/* HEADER */
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo {
+  width: 12vw;
+    height:15vh;
+}
+
+.header-right {
+  display: flex;
+  gap: 15px;
+}
+
+.lang {
+  padding: 7px 10px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.signin {
+  background: #e50914;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  height: 98vh;
+  background: url("images/netflix-bg.png") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hero-content p {
+  margin: 15px 0;
+  
+}
+
+.para {
+  
+  margin-bottom: 20px;
+}
+
+.email-box {
+    
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.email-box input {
+  padding: 15px;
+      height: 8vh;
+  width: 25vw;
+  max-width: 100%;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid white;
+  background-color:transparent;
+  color: rgb(119, 118, 118) ;
+}
+
+.email-box button {
+    width: 13vw; 
+   height: 8vh;
+    
+  font-size: 18px;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.trend{
+    color: white;
+    width:1120px;
+   margin: auto;
+    padding-left: 0;
+    padding-top: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.trend2{
+    color: white;
+    width:1120px;
+   margin: auto;
+    padding-left: 0;
+    padding-top: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+
+.first{
+
+  display: flex;
+   gap: 20px;
+   overflow: auto;
+   scrollbar-width: none;
+   margin: auto;
+margin-top: 15px;
+  width: 100%;
+  max-width: 1120px;  
+}
+
+.card{
+    width: clamp(140px, 14vw, 220px);
+  height: clamp(210px, 45vh, 280px);
+    position: relative;
+    flex: 0 0 auto;
+
+    
+    overflow: visible;
+    padding: 5px 10px;
+   transition: transform 0.1s all ease-in-out;
+}
+.card:hover{
+    transform: scale(1.10);
+    
+    
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+.number{
+    color: rgb(0, 0, 0);
+    font-size: 80px;
+    
+    position: absolute;
+    bottom: 10px;
+    left: -4px;
+    font-weight: 900;
+    -webkit-text-stroke: 1px white;
+}
+
+
+   .secondsec{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: auto;
+  width: 1120px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+   }
+
+.contentbox{
+     position: relative;
+  height: 250px;
+  padding: 24px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #1b2340, #2a0f2f);
+}
+.contentbox h2{
+    margin-bottom: 20px;
+}
+
+
+.tv{
+    width: 72px;
+    height: 72px;
+    margin-top: 40px;
+    margin-left: auto;
+    display: block;
+    size: 30px;
+}
+.tv2{
+  width: 72px;
+    height: 62px;
+    margin-top: 5px;
+      margin-left: auto;
+      right: 3px;
+     display: block;
+    size: 30px;
+}
+
+
+.faq{
+    background-color: black;
+}
+.faqbox{
+background-color: #2d2d2d;
+justify-content: space-between;
+display: flex;
+color: white;
+margin: 10px auto;
+width: min(1120px, calc(100% - 2rem));
+min-height: 80px;
+align-items: center;
+flex-wrap: wrap;
+
+ font-family: "Roboto", sans-serif;
+
+}
+.faqbox:hover{
+     background-color: #414141;
+    color: white;
+}
+.faq-question{
+   font-size: 1.5rem;            /* big or small – no issue */
+  
+  max-width: 90%;
+   padding: 30px;
+}
+
+.plus{width: 100px;
+  height: 90px;
+font-weight: 100;
+    color: white;
+    padding:10px ;
+    flex-shrink: 0;      
+}
+.emails{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    font-family: "Roboto", sans-serif;
+}.buttonse {
+    display: flex;
+justify-content: center;
+    min-height: 56px;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    width: 100vw;
+  padding:0px 20px;
+}
+.buttonse input{
+  padding: 15px;
+  font-size: 1rem;
+  background: transparent;
+  border: 1px solid white;
+  outline: none;
+  font-weight: 700;
+  color:rgb(227, 220, 220); ;
+  border-radius: 4px;
+ 
+  position: relative;
+  z-index: 10;
+  width: min(560px, 100%);
+}
+.buttonse button{
+    width: auto;
+    min-width: 201px;
+    background: red;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 21px;
+  cursor: pointer;
+  border-radius: 4px;
+ 
+}
+.foot{
+    width: min(1120px, calc(100% - 2rem));
+    margin-inline: auto;
+    padding: 50px 0 0px 0px;
+   background-color: black;
+    
+    color:white ;
+}
+.lastsec{
+    background-color: black;
+}
+.footers{
+    background-color: black;
+   font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width: min(1120px, calc(100% - 2rem));
+    margin-inline: auto;
+    padding: 75px 0 120px 0;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.footer-item{
+display: flex;
+flex-direction: column;
+
+gap: 23px;
+}
+
+.footer-item a{
+  color: rgb(195, 195, 195);
+}
+
+.lang2{
+  padding: 7px 10px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  
+  
+}
+.footpara{
+  margin: auto;
+  width: 1120px;
+
+}
+.footpara select{
+  margin-bottom: 40px;
+}
+.footpara h3{
+  margin-bottom:40px ;
+}
+.footpara p{
+  margin-bottom: 300px;
+}
+
+
+/*tablet*/
+
+@media (max-width: 1200px) {
+
+.hero-content {
+  position: relative;
+  max-width: 500px;
+  padding-top: 100px;
+}
+
+
+ .hero-content h1 {
+    font-size:1.75rem;
+  
+  }
+.hero-content p {
+  margin-top: 8px;
+  margin-bottom: 20px;
+  
+}
+
+
+  .header {
+
+    padding: 15px 5%;
+  }
+
+  .email-box button {
+   width: 18vw; 
+   height: 7vh;
+    padding: 4px 0px;
+  font-size: 15px;
+  
+
+}
+.email-box input {
+ width: 35vw; 
+   height: 7vh;
+    padding: 4px 10px;
+  font-size: 15px;
+  
+}
+.logo {
+  width: 20vw;
+    height:13vh;
+}
+
+.lang {
+  padding:5px px;
+  width: 13vw;
+font-size: 13px;
+
+}
+
+.signin {
+  width: 15vw;
+  font-size: 13px;
+  padding: 0px;
+}
+.header-right {
+  
+  gap: 5px;
+}
+
+ .secondsec {
+    grid-template-columns: 1fr;
+   width: 90vw;
+   margin: auto;
+   gap: 5px;
+  }
+
+  .contentbox {
+    height: 170px;
+  }
+  .tv{
+    width: 52px;
+    height: 52px;
+    margin-top: 20px;
+    margin-left: auto;
+    display: block;
+}
+.tv2{
+  width: 52px;
+    height: 52px;
+    margin-top: 15px;
+      margin-left: auto;
+     display: block;
+}
+
+
+
+   .contentbox h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+  .trend2{
+    margin-left: 5vw;
+    font-weight: 100;
+    margin-bottom: 10px;
+   font-size: medium;
+  }
+.faqbox{
+  height: 72px;
+  width: 704px;
+}
+
+.faqbox h2{
+  font-size: 20px;
+font-weight: 200;
+}
+
+.plus{
+  height: 70px;
+  height: 70px;
+  padding-top:20px;
+ 
+}
+  .buttonse input{
+    width: 519px;
+    height: 56px;
+  }
+
+}
+
+
+@media (max-width: 1200px) {
+  .card {
+    width: 170px;
+    height: 260px;
+    
+  }
+
+  .number {
+    font-size: 75px;
+    margin: auto;
+    
+  }
+  .first{ 
+  
+     margin: auto;
+     width:900px;
+     gap: 0px;
+  }
+
+  .trend{
+    margin-left: 5vw;
+    font-weight: 100;
+    margin-bottom: 10px;
+   font-size: medium;
+  }
+  .footpara{
+  margin: auto;
+  width: 700px;
+
+}
+}
+
+@media (max-width: 800px) {
+.first{ 
+  
+     margin: auto;
+     width: 650px;
+  }
+  .trend{
+    margin-left: 5vw;
+   
+  }
+  .card {
+    width: 122px;
+    height: 166px;
+  }
+   .number {
+    bottom: 20px;
+    width: 35px;
+    height: 64px;
+    margin: auto;
+    font-size: 50px;
+  }
+
+  
+}
+
+
+
+/*phone*/
+@media (max-width: 500px) {
+.hero-content {
+  
+  max-width: 300px;
+  padding: 0px 35px;
+  margin-top: 50px;
+}
+.hero-content h1 {
+    font-size:1.75rem;
+  font-weight: 600;
+  }
+  .hero-content p {
+  margin-top: 8px;
+  margin-bottom: 15px;
+  
+}
+.hero-contentpara{
+  line-height: 1.8;
+
+}
+.logo {
+  width: 35vw;
+    height:10vh;
+}
+.lang {
+  
+  width: 25vw;
+font-size: 13px;
+
+}
+.signin {
+  width: 20vw;
+  font-size: 13px;
+  
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.2);
+}
+.email-box input {
+ width: 90vw; 
+}
+.email-box button {
+   width: 50vw; 
+   padding: 0px 20px;
+   margin-top: 4px;
+  font-size: large;
+
+}
+
+
+  .contentbox {
+    height: 190px;
+    margin: 3px 0px;
+  }
+  .tv{
+   
+    margin-top: 10px;
+    margin-left:auto;
+    display: block;
+}
+.tv2{
+ 
+    margin-top: 4px;
+      margin-left:auto;
+     display: block;
+}
+
+
+
+   .contentbox h2{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.faqbox{
+  height: 72px;
+  width: 272px;
+  margin: 10px 20px;
+gap: 0px;
+
+align-items: center;
+
+  
+}
+.faq-question {
+    font-size: 1rem;                 /* smaller text */
+   padding:15px 20px;
+    max-width: 80%;
+  }
+
+
+.plus{
+  width: 40px;
+  height: 70px;
+margin: 5px;
+ font-size: 1.8rem;       
+ padding: 5px 2px;
+}
+  .buttonse input{
+    width: 272px;
+    height: 48px;
+  }
+.buttonse button{
+  width: 156px;
+  height: 48px;
+
+}
+.buttonse{
+  justify-content: flex-start;
+}
+.emails{
+  width: 272px;
+  margin: 50px auto;
+  justify-content: flex-start;
+}
+.footers{
+  width: 230px;
+  margin: 0px 20px;
+padding: 50px 0px;
+}
+.footer-item a{
+  color: rgb(195, 195, 195);
+}
+.footpara{
+  margin: auto;
+  width: 288px;
+
+}
+.footpara p{
+ color: rgb(153, 150, 150);
+
+}
+
+
+
+@media (max-width: 500px) {
+.first{ 
+     margin: auto;
+     width: 270px;
+     gap: 3px;
+  }
+   .card {
+    width: 122px;
+    height: 166px;
+  }
+   .number {
+    bottom: 20px;
+    width: 35px;
+    height: 64px;
+    margin: auto;
+    font-size: 50px;
+  }
+
+  .trend{
+    margin-left: 8vw;
+    font-weight: 100;
+    font-size: medium;
+   
+  }
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

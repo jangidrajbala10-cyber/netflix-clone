@@ -1,0 +1,37 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Front face gradient -->
+    <linearGradient id="frontGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7b2cff"></stop>
+      <stop offset="100%" stop-color="#ff2a2a"></stop>
+    </linearGradient>
+
+    <!-- Back face gradient -->
+    <linearGradient id="backGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff9bd4"></stop>
+      <stop offset="100%" stop-color="#ffd1e8"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Back face -->
+  <rect x="12" y="10" width="56" height="56" rx="14" fill="url(#backGrad)" opacity="0.95"></rect>
+
+  <!-- Back face eyes -->
+  <circle cx="28" cy="32" r="3" fill="#7a0047"></circle>
+  <circle cx="48" cy="32" r="3" fill="#7a0047"></circle>
+
+  <!-- Back face smile -->
+  <path d="M30 42 Q38 48 46 42" stroke="#7a0047" stroke-width="3" fill="none" stroke-linecap="round"></path>
+
+  <!-- Front face -->
+  <rect x="44" y="40" width="64" height="64" rx="16" fill="url(#frontGrad)"></rect>
+
+  <!-- Front face eyes -->
+  <circle cx="64" cy="66" r="4" fill="#ffffff"></circle>
+  <circle cx="88" cy="66" r="4" fill="#ffffff"></circle>
+
+  <!-- Front face smile -->
+  <path d="M66 82 Q76 90 86 82" stroke="#ffffff" stroke-width="4" fill="none" stroke-linecap="round"></path>
+
+</svg>

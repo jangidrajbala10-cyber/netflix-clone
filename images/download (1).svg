@@ -1,0 +1,39 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Screen gradient -->
+    <radialGradient id="screenGradient" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ff4dff"></stop>
+      <stop offset="50%" stop-color="#7b2cff"></stop>
+      <stop offset="100%" stop-color="#1a001a"></stop>
+    </radialGradient>
+
+    <!-- Border gradient -->
+    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b2cff"></stop>
+      <stop offset="100%" stop-color="#ff2a2a"></stop>
+    </linearGradient>
+
+    <!-- Stand gradient -->
+    <linearGradient id="standGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7b0000"></stop>
+      <stop offset="100%" stop-color="#ff2a2a"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Screen border -->
+  <rect x="24" y="24" width="208" height="136" rx="12" fill="none" stroke="url(#borderGradient)" stroke-width="6"></rect>
+
+  <!-- Screen -->
+  <rect x="30" y="30" width="196" height="124" rx="10" fill="url(#screenGradient)"></rect>
+
+  <!-- Power indicator -->
+  <rect x="120" y="152" width="16" height="6" rx="3" fill="#ffffff"></rect>
+
+  <!-- Stand neck -->
+  <rect x="116" y="158" width="24" height="28" rx="6" fill="url(#standGradient)"></rect>
+
+  <!-- Stand base -->
+  <path d="M72 196 Q128 216 184 196 L184 206 Q128 226 72 206 Z" fill="url(#standGradient)"></path>
+
+</svg>
